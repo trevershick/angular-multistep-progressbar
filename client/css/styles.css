@@ -1,0 +1,104 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-size: 12pt;
+}
+/* adjust the first item to not have a chevron on the left
+.chevrons li:first-child:before {
+	border:none
+}*/
+/*
+adjust the last arrow to have no arrow on the right hand side
+.chevrons li:last-child:after {
+	border:none
+}
+*/
+div.chevrons {
+  text-align: center;
+}
+ul.chevrons {
+  list-style: none;
+  overflow: hidden;
+  display: inline;
+}
+ul.chevrons a {
+  color: #ffffff;
+}
+ul.chevrons li {
+  height: 40px;
+  width: 160px;
+  font-size: 15px;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: -10px;
+}
+ul.chevrons li span {
+  padding-top: 10px;
+  background: #309dd4;
+  margin-left: 10px;
+  height: 40px;
+  width: 130px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+}
+ul.chevrons li:before {
+  border-top: 20px solid #309dd4;
+  border-bottom: 20px solid #309dd4;
+  border-left: 10px solid transparent;
+  content: '';
+  height: 0;
+  position: absolute;
+}
+ul.chevrons li:after {
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid #309dd4;
+  content: '';
+  height: 0;
+  position: absolute;
+}
+ul.chevrons li.success a {
+  color: inherit;
+}
+ul.chevrons li.success span {
+  color: #ffffff;
+  background: #67b646;
+}
+ul.chevrons li.success:after {
+  border-left: 10px solid #67b646;
+}
+ul.chevrons li.success:before {
+  border-top: 20px solid #67b646;
+  border-bottom: 20px solid #67b646;
+}
+ul.chevrons li.failure a {
+  color: inherit;
+}
+ul.chevrons li.failure span {
+  color: #ffffff;
+  background: #b84c4c;
+}
+ul.chevrons li.failure:after {
+  border-left: 10px solid #b84c4c;
+}
+ul.chevrons li.failure:before {
+  border-top: 20px solid #b84c4c;
+  border-bottom: 20px solid #b84c4c;
+}
+ul.chevrons li.inprogress a {
+  color: inherit;
+}
+ul.chevrons li.inprogress span {
+  color: #ffffff;
+  background: #e8ca2b;
+}
+ul.chevrons li.inprogress:after {
+  border-left: 10px solid #e8ca2b;
+}
+ul.chevrons li.inprogress:before {
+  border-top: 20px solid #e8ca2b;
+  border-bottom: 20px solid #e8ca2b;
+}

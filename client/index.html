@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="MyApp">
+	<head>
+		<link rel='stylesheet' href='vendor/bootstrap/dist/css/bootstrap.min.css'/>
+		<meta name='environment' content=settings.env/>
+		<link rel='stylesheet' href='css/styles.css'/>
+		<script src='vendor/angular/angular.min.js'></script>
+		<script src='vendor/angular-ui-router/release/angular-ui-router.js'></script>
+		<script src='vendor/angular-cookies/angular-cookies.js'></script>
+		<script src='vendor/jquery/dist/jquery.js'></script>
+		<script src='vendor/bootstrap/dist/js/bootstrap.js'></script>
+		<script src='vendor/lodash/dist/lodash.compat.min.js'></script>
+		<script src='frolic-progress.js'></script>
+		<script src='progress.js'></script>
+    </head>
+	<body ng-controller="MyController">
+		<div class="container-fluid">
+			<h1>{{header}}</h1>
+
+			<progressbar steps="steps.all"></progressbar>
+
+			<label for="randomise">
+				<input id="randomise" type="checkbox" ng-model="random"/>
+				Randomise
+				</label>
+				
+
+			<h1>Messages</h1>
+			<div class="well">
+				<div ng-repeat="message in messages">
+					{{message}}
+					</div>
+					</div>
+		</div>
+	</body>	
+
+</html>
